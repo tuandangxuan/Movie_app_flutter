@@ -121,7 +121,6 @@ Future<List<Movie>> fetchMoviesFavourite() async {
       'Content-Type': 'application/json',
       'accept': 'application/json',
       'Authorization' :'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1MGZlZWQ4NGE3MWU0MTQwZjExYmM1Nzk4ZTViODNhYSIsInN1YiI6IjY0Y2M3ZjllNzY0Yjk5MDBjNjM4MmNhNCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.PKQvqWusmk0m3vTo21FZk7U0jttCzYPS0e3auWjKMGQ'
-      // Thêm các header khác nếu cần thiết, ví dụ như Authorization header
       });
 
     if (response.statusCode == 200) {

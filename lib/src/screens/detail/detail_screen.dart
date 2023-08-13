@@ -2,8 +2,6 @@
 import 'package:flutter/material.dart';
 import 'package:movie_app/src/models/movie.dart';
 import 'package:movie_app/src/screens/detail/widgets/cast_in_detail.dart';
-import 'package:movie_app/src/utils.dart';
-import '../../models/film.dart';
 import 'widgets/summary_in_detail.dart';
 import 'widgets/top_in_detail.dart';
 import 'widgets/title_in_detail.dart';
@@ -17,7 +15,6 @@ class DetailScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Film film = films[1];
     return Scaffold(
       body: Container(
         padding: const EdgeInsets.only(top: 20),

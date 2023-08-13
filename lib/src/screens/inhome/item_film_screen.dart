@@ -1,20 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:movie_app/src/models/film.dart';
-import 'package:movie_app/src/models/genres.dart';
 import 'package:movie_app/src/models/movie.dart';
 
 class ItemFilm extends StatelessWidget {
   final Movie movie;
-  final double height;
 
   const ItemFilm({
     super.key,
     required this.movie,
-    required this.height,
   });
 
   @override
   Widget build(BuildContext context) {
+    double height = MediaQuery.of(context).size.height;
     return Container(
       width: height/3,
       alignment: Alignment.center,

@@ -1,8 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:movie_app/src/blocs/main_bloc.dart';
 import 'package:movie_app/src/screens/inhome/home_screen.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const MyCoreApp());
+}
+
+class MyCoreApp extends StatelessWidget {
+  const MyCoreApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MultiBlocProvider(
+        providers: MainBloc.allBlocs(),
+        child: const MyApp());
+  }
 }
 
 class MyApp extends StatelessWidget {

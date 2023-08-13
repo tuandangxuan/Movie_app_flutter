@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:movie_app/src/models/movie.dart';
 
-import '../../../models/film.dart';
 
 class TopInDetail extends StatefulWidget {
   final Movie movie;

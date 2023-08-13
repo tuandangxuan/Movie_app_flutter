@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_font_picker/flutter_font_picker.dart';
 import 'package:movie_app/src/models/movie.dart';
-import '../../../models/film.dart';
 
 class SummaryInDetail extends StatelessWidget {
   final Movie movie;
